@@ -1,73 +1,89 @@
-# React + TypeScript + Vite
+<div align="center">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🐹 Guinea Pig Wiki
 
-Currently, two official plugins are available:
+**The ultimate community-driven encyclopedia for guinea pig lovers.**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Vite](https://img.shields.io/badge/Vite-8-646CFF?logo=vite&logoColor=white)](https://vite.dev/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./CONTRIBUTING.md)
 
-## React Compiler
+</div>
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+Whether you're a seasoned cavy keeper or just adopted your first fluffy potato, **Guinea Pig Wiki** is your go-to resource for everything guinea pig — care guides, breed profiles, health tips, diet info, and more. All written and maintained by the community, for the community.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ✨ Features
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- 📖 **Comprehensive Care Guides** — housing, diet, enrichment, and bonding
+- 🐾 **Breed Profiles** — from Abyssinian to Teddy, every coat and personality
+- 🏥 **Health & Vet Info** — common illnesses, symptoms, and when to seek help
+- 🥦 **Safe Food List** — what your piggies can (and definitely cannot) eat
+- 🔍 **Fast Search** — find any article instantly
+- 🌙 **Dark Mode** — easier on the eyes during late-night piggy emergencies
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🚀 Getting Started
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) v18+
+- [pnpm](https://pnpm.io/) (recommended) or npm/yarn
+
+### Installation
+
+```bash
+# Clone the repo
+git clone https://github.com/your-username/guineapig-wiki.git
+cd guineapig-wiki
+
+# Install dependencies
+pnpm install
+
+# Start the dev server
+pnpm dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+The app will be running at `http://localhost:5173`.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Useful Scripts
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+| Command | Description |
+|---|---|
+| `pnpm dev` | Start development server with HMR |
+| `pnpm build` | Type-check and build for production |
+| `pnpm preview` | Preview the production build locally |
+| `pnpm lint` | Run ESLint |
+
+## 🏗️ Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Framework | [React 19](https://react.dev/) |
+| Language | [TypeScript](https://www.typescriptlang.org/) |
+| Build Tool | [Vite](https://vite.dev/) |
+| Linting | [ESLint](https://eslint.org/) + [typescript-eslint](https://typescript-eslint.io/) |
+
+## 🤝 Contributing
+
+Contributions of all kinds are warmly welcome — whether it's fixing a typo, adding a new article, or building a feature. Please read [CONTRIBUTING.md](./CONTRIBUTING.md) to get started, and check the [open issues](../../issues) for ideas.
+
+## 📜 Code of Conduct
+
+This project follows the [Contributor Covenant](./CODE_OF_CONDUCT.md). By participating, you agree to uphold a respectful and inclusive environment for everyone.
+
+## 🔒 Security
+
+If you discover a security vulnerability, please do **not** open a public issue. See [SECURITY.md](./SECURITY.md) for responsible disclosure instructions.
+
+## 📄 License
+
+Distributed under the MIT License. See [LICENSE](./LICENSE) for details.
+
+---
+
+<div align="center">
+Made with ❤️ and a lot of wheeks
+</div>
