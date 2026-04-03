@@ -36,7 +36,7 @@ Whether you're a seasoned cavy keeper or just adopted your first fluffy potato, 
 
 ```bash
 # Clone the repo
-git clone https://github.com/your-username/guineapig-wiki.git
+git clone https://github.com/aarreehh/guineapig-wiki.git
 cd guineapig-wiki
 
 # Install dependencies
